@@ -5,7 +5,19 @@ export default function NavBar() {
         <>
             <div className={styles.navbarwrapper}>
                 <img className={styles.sblogo} src='/SB-logo.png' />
-                <div>log in user</div>
+
+                <div className={styles.searchcontainer}>
+                    
+                        <input className={styles.searchbar} type="text" placeholder="Search" name="search" />
+                        <button className={styles.searchbutton} type="submit" />
+
+                </div>
+
+                {/* if !session-user */}
+                <img className={styles.usericon} src='/default-user.svg' />
+                {/*          */}
+
+
             </div>
         </>
     )
