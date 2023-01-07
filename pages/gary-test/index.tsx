@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Matrix() {
     return (
         <>
-            <div className={styles.test}>I'M IN THE MATRIX</div>
+            <div className={styles.test}>o ya def</div>
         </>
     )
 }
