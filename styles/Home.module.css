@@ -280,7 +280,7 @@
   align-items: center;
   width: 100vw;
   height: 100px;
-  border-bottom: white 1px solid;
+  border-bottom: #797979 1px solid;
   padding-left: 6%;
   padding-right: 6%;
 }
@@ -294,6 +294,11 @@
   width: 40px;
   height: 40px;
   border-radius: 9999px;
+  filter: invert(51%) sepia(1%) saturate(140%) hue-rotate(346deg) brightness(92%) contrast(87%);
+}
+
+.usericon:hover {
+  cursor: pointer;
   filter: invert(91%) sepia(61%) saturate(2%) hue-rotate(132deg) brightness(115%) contrast(100%);
 }
 
