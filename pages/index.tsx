@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import BoardCard, { BoardCardProps } from '../components/BoardCard/BoardCard'
+import PrimaryButton from '../components/PrimaryButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,7 +39,7 @@ export default function Home() {
             })}
         </div>
         <div className={styles.newBoardCt}>
-          <button type="button" className="border font-medium rounded-lg text-sm px-5 py-2.5 text-center">Create New Board</button>
+          <PrimaryButton>Create New Board</PrimaryButton>
         </div>
       </main>
     </>
