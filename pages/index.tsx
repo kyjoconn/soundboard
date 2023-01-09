@@ -32,11 +32,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
+
+        <div className={styles.animationbody}>
+          <h1>Sound<span className={styles.whitecolor}>.<span className={styles.e06c75color}>board</span>.</span><span className={styles.bluecolor}>render</span>("</h1>
+          <div className={styles.string}>
+            <h1 className={styles.en}>Discover</h1>
+            <h1 className={styles.es}>Upload</h1>
+            <h1 className={styles.de}>Create</h1>
+            <h1 className={styles.it}>Listen</h1>
+          </div>
+          <h1 className={styles.closure}>");</h1>
+        </div>
+
+
         <h3 className="m-4 ml-0">New Boards</h3>
         <div className={styles.newBoards}>
-            {boards.map(({name, img_url}) => {
-              return <BoardCard key={name} name={name} img_url={img_url} />
-            })}
+          {boards.map(({ name, img_url }) => {
+            return <BoardCard key={name} name={name} img_url={img_url} />
+          })}
         </div>
         <div className={styles.newBoardCt}>
           <PrimaryButton>Create New Board</PrimaryButton>

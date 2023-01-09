@@ -352,3 +352,112 @@
   justify-content: flex-end;
   padding: 24px;
 }
+
+/* ================= animation ================= */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.animationbody {
+  background: transparent;
+  font-size: 2vmin;
+  font-family: JetBrains Mono, monospace;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e4bb68;
+}
+
+.whitecolor {
+  color: white;
+}
+
+.e06c75color {
+  color: #e06c75;
+}
+
+.bluecolor {
+  color: #61afef;
+}
+
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 4s infinite;
+}
+
+.greeting {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+}
+
+.closure::after {
+  content: '';
+  position: absolute;
+  top: 380px;
+  height: 15vmin;
+  width: 80vmin;
+  background: black;
+  transform: translate(-45vmin, -24.5vmin);
+  /* border: red 1px solid; */
+}
+
+.closure::before {
+  content: '';
+  position: absolute;
+  height: 15vmin;
+  width: 40vmin;
+  background: black;
+  transform: translate(-40vmin, 5vmin);
+}
+
+.en {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+  color: #fa8231;
+}
+
+.es {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+  color: white;
+}
+
+.de {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+  color: #c678dd;
+}
+
+.it {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+  color: #a9b0bd;
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-5.8vmin);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translatey(-11vmin);
+  }
+
+  75% {
+    transform: translatey(-16.5vmin);
+  }
+}
