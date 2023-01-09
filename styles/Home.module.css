@@ -1,10 +1,37 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  padding: 64px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.newBoards {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.boardCard {
+  min-width: 300px;
+  min-height: 250px;
+  border-radius: 4px;
+}
+
+.boardCard:hover {
+  cursor: pointer;
+}
+
+.boardImg {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  transition: transform .2s;
+}
+
+.boardImg:hover {
+  transform: scale(1.02);
 }
 
 .description {
@@ -322,4 +349,11 @@
   height: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.newBoardCt {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px;
 }
