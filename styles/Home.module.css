@@ -30,6 +30,26 @@
   transition: transform .2s;
 }
 
+@media only screen and (max-width: 500px) {
+  .main {
+    padding: 16px;
+  }
+
+  .newBoards {
+    width: unset;
+    gap: 16px;
+  }
+
+  .boardCard {
+    min-width: 85%;
+  }
+
+  .newBoardCt {
+    align-items: center;
+    justify-content: center !important;
+  }
+}
+
 .boardImg:hover {
   transform: scale(1.02);
 }
